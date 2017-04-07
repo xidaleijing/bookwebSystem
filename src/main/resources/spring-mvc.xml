@@ -24,8 +24,17 @@
  </mvc:annotation-driven>
  
  <mvc:resources location="/WEB-INF/jquery" mapping="/jquery/**"/>
+ <mvc:interceptors>
+   <mvc:interceptor>
+   		<mvc:mapping path="/*"/>
+   		<mvc:exclude-mapping path="/login"/>
+   		<mvc:exclude-mapping path="/signin"/>
+   		<mvc:exclude-mapping path="/jquery/**"/>
+   		<bean class="com.bookwebsystem.web.controller.LoginInterceptor"/>
+   </mvc:interceptor>
+ </mvc:interceptors>
  
-   <!-- 视图解析器 -->  
+<!-- 视图解析器 -->  
 <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
 	<property name="prefix" value="/WEB-INF/views/"/>

@@ -4,11 +4,40 @@ public class User {
 
 	private String id;
 	
-	private String name;
+	/**
+	 * 真实姓名
+	 */
+	private String realName;
 	
+	/**
+	 * 性别
+	 */
 	private String sex;
 	
+	/**
+	 * 年龄
+	 */
 	private int age;
+	
+	/**
+	 * 电话号码
+	 */
+	private String telephone;
+	
+	/**
+	 * 邮箱
+	 */
+	private String email;
+	
+	/**
+	 * 用户名
+	 */
+    private String userName;
+    
+    /**
+     * 密码
+     */
+    private String passWord;
 
 	public String getId() {
 		return id;
@@ -17,15 +46,6 @@ public class User {
 	public void setId(String id) {
 		this.id = id;
 	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	public String getSex() {
 		return sex;
 	}
@@ -40,5 +60,47 @@ public class User {
 
 	public void setAge(int age) {
 		this.age = age;
+	}
+
+	public String getTelephone() {
+		return telephone;
+	}
+
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
+
+	
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassWord() {
+		return passWord;
+	}
+
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
+	}
+
+	public String getRealName() {
+		return realName;
+	}
+
+	public void setRealName(String realName) {
+		this.realName = realName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 }

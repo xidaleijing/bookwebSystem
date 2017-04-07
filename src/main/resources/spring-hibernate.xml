@@ -12,9 +12,11 @@
 		<!-- 引入属性文件config.properties -->
  <context:property-placeholder location="classpath:config.properties"/>
  <!-- 启用注解扫描 -->
- <context:annotation-config />
+ <context:annotation-config /> 
+ 
+ <tx:annotation-driven/>
  <!-- 启用组件扫描 -->
- <context:component-scan base-package="com.bookwebsystem.service.impl,com.bookwebsystem.dao.impl"/>
+ <context:component-scan base-package="com.bookwebsystem"/>
 		
 	<!-- 配置数据源 -->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">

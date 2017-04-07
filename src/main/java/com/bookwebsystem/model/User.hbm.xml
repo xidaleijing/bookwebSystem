@@ -7,14 +7,12 @@
        <id name="id">
 			<generator class="org.hibernate.id.UUIDGenerator"/>
 		</id>
-        <property name="name" type="java.lang.String">
-            <column name="NAME" />
-        </property>
-        <property name="sex" type="java.lang.String">
-            <column name="SEX" />
-        </property>
-        <property name="age" type="int">
-            <column name="AGE" />
-        </property>
+        <property name="realName" type="java.lang.String" column="t_realName"/>
+        <property name="sex" type="java.lang.String" column="t_sex"/>
+        <property name="age" type="int" column="t_age"/>
+        <property name="email" column="t_email"/>
+        <property name="telephone" column="t_telephone"/>
+        <property name="userName" column="t_userName"/>
+        <property name="passWord" column="t_passWord"/>
     </class>
 </hibernate-mapping>
