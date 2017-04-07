@@ -14,11 +14,11 @@ function  test(){
 	alert("刘超辉，猪宝宝，下午好~");
 }
 </script>
-<title>Insert title here</title>
+<title>欢迎页面</title>
 </head>
 <body>
 	<p>静静的网站fdhfdifwie</p>
-	<p>初始访问地址:<%=basePath+"index" %></p>
+	<p>初始访问地址:<%=basePath+"login" %></p>
 	<input type="text" value="刘超辉"/>
 	<input type="button" value="我是淘气按钮，点我有惊喜" onclick="test();">
 	${message} 
